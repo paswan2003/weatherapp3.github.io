@@ -48,7 +48,7 @@ def getWeather():
     #first
     firstdayimage= json_data['daily'][0]['weather'][0]['icon']
 
-    photo1 = ImageTk.PhotoImage(file=f"C:\\Users\\akash paswan\\Pictures\\icons/{firstdayimage}@2x.png")
+    photo1 = ImageTk.PhotoImage(file=f"C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\icons/{firstdayimage}@2x.png")
     firstimage.config(image=photo1)
     firstimage.image=photo1
 
@@ -61,7 +61,7 @@ def getWeather():
     #second
     seconddayimage= json_data['daily'][1]['weather'][0]['icon']
 
-    img=(Image.open(f"C:\\Users\\akash paswan\\Pictures\\icons/{seconddayimage}@2x.png"))
+    img=(Image.open(f"C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\icons/{seconddayimage}@2x.png"))
     resized_image= img.resize((50,50))
     photo2 = ImageTk.PhotoImage(resized_image)
     secondimage.config(image=photo2)
@@ -76,7 +76,7 @@ def getWeather():
     #third
     thirddayimage= json_data['daily'][2]['weather'][0]['icon']
 
-    img=(Image.open(f"C:\\Users\\akash paswan\\Pictures\\icons/{thirddayimage}@2x.png"))
+    img=(Image.open(f"C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\icons/{thirddayimage}@2x.png"))
     resized_image= img.resize((50,50))
     photo3 = ImageTk.PhotoImage(resized_image)
     thirdimage.config(image=photo3)
@@ -91,7 +91,7 @@ def getWeather():
     #fourth
     fourthdayimage= json_data['daily'][3]['weather'][0]['icon']
 
-    img=(Image.open(f"C:\\Users\\akash paswan\\Pictures\\icons/{fourthdayimage}@2x.png"))
+    img=(Image.open(f"C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\icons/{fourthdayimage}@2x.png"))
     resized_image= img.resize((50,50))
     photo4 = ImageTk.PhotoImage(resized_image)
     fourthimage.config(image=photo4)
@@ -106,7 +106,7 @@ def getWeather():
     #fifth
     fifthdayimage= json_data['daily'][4]['weather'][0]['icon']
 
-    img=(Image.open(f"C:\\Users\\akash paswan\\Pictures\\icons/{fifthdayimage}@2x.png"))
+    img=(Image.open(f"C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\icons/{fifthdayimage}@2x.png"))
     resized_image= img.resize((50,50))
     photo5 = ImageTk.PhotoImage(resized_image)
     fifthimage.config(image=photo5)
@@ -121,7 +121,7 @@ def getWeather():
     #sixth
     sixthdayimage= json_data['daily'][5]['weather'][0]['icon']
 
-    img=(Image.open(f"C:\\Users\\akash paswan\\Pictures\\icons/{sixthdayimage}@2x.png"))
+    img=(Image.open(f"C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\icons/{sixthdayimage}@2x.png"))
     resized_image= img.resize((50,50))
     photo6 = ImageTk.PhotoImage(resized_image)
     sixthimage.config(image=photo6)
@@ -136,7 +136,7 @@ def getWeather():
     #seventh
     seventhdayimage= json_data['daily'][6]['weather'][0]['icon']
 
-    img=(Image.open(f"C:\\Users\\akash paswan\\Pictures\\icons/{seventhdayimage}@2x.png"))
+    img=(Image.open(f"C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\icons/{seventhdayimage}@2x.png"))
     resized_image= img.resize((50,50))
     photo7 = ImageTk.PhotoImage(resized_image)
     seventhimage.config(image=photo7)
@@ -172,7 +172,7 @@ def getWeather():
     day7.config(text=seventh.strftime("%A"))
 
                                                                                                   
-Round_box=PhotoImage(file="C:\\Users\\akash paswan\\Pictures\\images\\Rounded Rectangle 1.png")
+Round_box=PhotoImage(file="C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\images\\Rounded Rectangle 1.png")
 Label(root,image=Round_box,bg="#57abff").place(x=30,y=110)
 
 label1=Label(root,text="Temperature:",font=('Helvetica',11),fg="white",bg="#203243")
@@ -190,11 +190,11 @@ label4.place(x=33,y=180)
 label5=Label(root,text="Description:",font=('Helvetica',11),fg="white",bg="#203243")
 label5.place(x=33,y=200)
 
-Search_image=PhotoImage(file="C:\\Users\\akash paswan\\Pictures\\images\\Rounded Rectangle 3.png")
+Search_image=PhotoImage(file="C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\images\\Rounded Rectangle 3.png")
 myimage=Label(image=Search_image,bg="#57adff")
 myimage.place(x=290,y=120)
 
-weat_image=PhotoImage(file="C:\\Users\\akash paswan\\Pictures\\images\\Layer 7.png")
+weat_image=PhotoImage(file="C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\images\\Layer 7.png")
 weatherimage=Label(root,image=weat_image,bg="#203243")
 weatherimage.place(x=305,y=127)
 
@@ -203,15 +203,15 @@ textfield.place(x=370,y=130)
 textfield.focus()
 
 
-Search_icon=PhotoImage(file="C:\\Users\\akash paswan\\Pictures\\images\\search_icon.png")
+Search_icon=PhotoImage(file="C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\images\\search_icon.png")
 myimage_icon=Button(image=Search_icon,borderwidth=0,cursor="hand2",bg="#203243",command=getWeather)
 myimage_icon.place(x=660,y=125)
 
 frame=Frame(root,width=900,height=180,bg="#212120")
 frame.pack(side=BOTTOM)
 
-firstbox=PhotoImage(file="C:\\Users\\akash paswan\\Pictures\\images\\Rounded Rectangle 2.png")
-secondbox=PhotoImage(file="C:\\Users\\akash paswan\\Pictures\\images\\Rounded Rectangle 2 copy.png")
+firstbox=PhotoImage(file="C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\images\\Rounded Rectangle 2.png")
+secondbox=PhotoImage(file="C:\\Users\\akash paswan\\Documents\\GitHub\\weatherapp3.github.io\\images\\Rounded Rectangle 2 copy.png")
 
 Label(frame,image=firstbox,bg="#212120").place(x=30,y=20)
 Label(frame,image=secondbox,bg="#212120").place(x=300,y=30)
